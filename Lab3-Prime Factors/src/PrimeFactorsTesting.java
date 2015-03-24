@@ -8,13 +8,20 @@ import org.junit.Test;
 
 public class PrimeFactorsTesting {
 
+	private List<Integer> list(Integer...integers){
+		return Arrays.asList(integers);
+	}
+	
 	@Test
 	public void testOne() {
 		assertEquals(list()	, PrimeFactors.generate(1));
 	}
 	
-	public List<Integer> list(){
-		return Arrays.asList();
+	@Test
+	public void testTwo(){
+		assertEquals(list(2), PrimeFactors.generate(2));
 	}
+	
+	
 
 }
