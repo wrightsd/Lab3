@@ -52,5 +52,4 @@ public class PrimeFactorsTesting {
 		assertEquals(list(5,7,7,1327), PrimeFactors.generate(325115));
 	}
 	
-
 }
