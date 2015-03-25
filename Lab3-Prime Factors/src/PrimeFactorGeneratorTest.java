@@ -25,6 +25,7 @@ public class PrimeFactorGeneratorTest {
 				{1,list()},
 				{3,list(2)},
 				{6,list(2,3,5)},
+				{13,list(2,3,5,7,11)},
 				
 		});
 	}
