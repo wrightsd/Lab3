@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,16 +13,20 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 public class PrimeFactorGeneratorTest {
 	private int inputNumber;
-	private ArrayList list;
+	private List<Integer> list;
+	
+	private static List<Integer> list(Integer...integers){
+		return Arrays.asList(integers);
+	}
 	
 	@Parameters
 	public static Collection upperLimits(){
 		return Arrays.asList(new Object[][]{
-				{1,new ArrayList()}
+				{1,list()},
 		});
 	}
 	
-	public PrimeFactorGeneratorTest(int inputNumber,ArrayList list){
+	public PrimeFactorGeneratorTest(int inputNumber,List<Integer> list){
 		this.inputNumber=inputNumber;
 		this.list=list;
 	}
