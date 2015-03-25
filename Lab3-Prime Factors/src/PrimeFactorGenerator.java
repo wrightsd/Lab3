@@ -1,20 +1,16 @@
 import java.util.ArrayList;
 
-
 public class PrimeFactorGenerator {
 
 	public static Object generate(int i) {
-		ArrayList<Integer> list=new ArrayList<Integer>();
-		if(i>2){
-			list.add(2);
-		}
-		if(i>3){
-			list.add(3);
-		}
-		if(i>5){
-			list.add(5);
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		if (i > 1) {
+			for (int j = 2; j <i; j++) {
+				if (PrimeFactors.generate(j).size() == 1) {
+					list.add(j);
+				}
+			}
 		}
 		return list;
 	}
-
 }
