@@ -23,6 +23,7 @@ public class PrimeFactorGeneratorTest {
 	public static Collection upperLimits(){
 		return Arrays.asList(new Object[][]{
 				{1,list()},
+				{3,list(2)},
 		});
 	}
 	
