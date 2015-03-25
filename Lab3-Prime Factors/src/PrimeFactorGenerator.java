@@ -8,9 +8,7 @@ public class PrimeFactorGenerator {
 		if(i>2){
 			list.add(2);
 		}
-		if(i>3){
-			list.add(3);
-		}
+		
 		return list;
 	}
 
