@@ -24,6 +24,7 @@ public class PrimeFactorGeneratorTest {
 		return Arrays.asList(new Object[][]{
 				{1,list()},
 				{3,list(2)},
+				{6,list(2,3)},
 		});
 	}
 	
