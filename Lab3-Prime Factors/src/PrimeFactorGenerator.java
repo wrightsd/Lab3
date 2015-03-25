@@ -11,6 +11,9 @@ public class PrimeFactorGenerator {
 		if(i>3){
 			list.add(3);
 		}
+		if(i>5){
+			list.add(5);
+		}
 		return list;
 	}
 
